@@ -26,7 +26,7 @@ FORCE_SCRIPT_NAME = '/homolog'
 SECRET_KEY = '*7775v9*b08=h%w$elt@7fne1m#i5c)^um8ycj0!g%)3%*e4_e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
