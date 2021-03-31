@@ -1,7 +1,10 @@
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls import url
 
 urlpatterns = [
-    path('/django_service/polls/', include('polls.urls')),
-    path('/django_service/admin/', admin.site.urls),
+    url(r'^homolog/'), include([
+        path('django_service/polls/', include('polls.urls')),
+        path('django_service/admin/', admin.site.urls),
+    ])
 ]
