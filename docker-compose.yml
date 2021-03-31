@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  # Application
+  django_service:
+    image: django_service
+    hostname: django_service
+    container_name: django_service
+    volumes:
+      - ./app:/app
+    ports: 
+      - "8000:8000"
+      - "9000:8080" # lambda port
+      - "5678:5678" # python debug port
+    environment:
+      - STAGE=local
+      - CLUSTER_URL=http://172.17.0.1:80
+      - BUILD_ID=1
+      - DATABASE_URL=mysql+pymysql://root:pass4mysql@172.17.0.1/homolog
+      - MONGODB_URL=mongodb://root:example@172.17.0.1:27017
+      #- DEBUG=0

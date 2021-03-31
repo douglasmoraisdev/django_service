@@ -1,0 +1,5 @@
+{
+    "STAGE": "homolog",
+    "CLUSTER_URL": "https://meboqxocli.execute-api.us-west-1.amazonaws.com",
+    "DATABASE_URL": "mysql+pymysql://root:pass4mysql@172.17.0.1/homolog"
+}
