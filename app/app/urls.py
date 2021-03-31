@@ -4,7 +4,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     url(r'^homolog/'), include([
-        path('django_service/polls/', include('polls.urls')),
-        path('django_service/admin/', admin.site.urls),
+        path(r'^django_service/polls/', include('polls.urls')),
+        path(r'^django_service/admin/', admin.site.urls),
     ])
 ]
