@@ -53,6 +53,7 @@ node {
 
         }
 
+        /*
         stage('Test') {
 
             projectImage.inside {
@@ -60,6 +61,7 @@ node {
             }
 
         }
+        */
 
         stage('Publish'){
 
