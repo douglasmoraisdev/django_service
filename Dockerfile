@@ -1,4 +1,4 @@
-FROM fastapi_base:latest
+FROM amazon/aws-lambda-python:3.7
 
 # service args to variables
 # env
@@ -25,4 +25,4 @@ RUN pip install -r ${LAMBDA_TASK_ROOT}/app/requirements.txt
 
 ENV PYTHONPATH=${LAMBDA_TASK_ROOT}/app
 
-CMD [ "app.lambda.lambda_handler" ]
+CMD [ "app.lambda.handler" ]

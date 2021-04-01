@@ -1,5 +1,6 @@
 Django
-gunicorn
+
 django-s3-storage
 apig-wsgi
 pytest-django
+mangum==0.10.0
