@@ -16,7 +16,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 USE_X_FORWARDED_HOST = True
-FORCE_SCRIPT_NAME = '/homolog'
+FORCE_SCRIPT_NAME = '/homolog/'
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +26,7 @@ FORCE_SCRIPT_NAME = '/homolog'
 SECRET_KEY = '*7775v9*b08=h%w$elt@7fne1m#i5c)^um8ycj0!g%)3%*e4_e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://us-east-2.console.aws.amazon.com', 'kruzmf4vb7.execute-api.us-east-2.amazonaws.com', '*']
 
