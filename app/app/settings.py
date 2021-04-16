@@ -129,10 +129,10 @@ DEFAULT_FILE_STORAGE = 'django_s3_storage.storage.S3Storage'
 
 STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
 
-AWS_REGION = "us-east-1"
+AWS_REGION = ""
 AWS_S3_BUCKET_NAME = "static-django-service"
-AWS_ACCESS_KEY_ID = "AKIA3S45XRFUYTT6QGTL"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = ""
+AWS_SECRET_ACCESS_KEY = ""
 AWS_S3_ADDRESSING_STYLE = "auto"
 
 AWS_S3_BUCKET_AUTH_STATIC = False
